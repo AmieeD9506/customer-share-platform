@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客户信息共享平台 - 测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 50px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 {
+            color: #303133;
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #f0f9ff;
+            border-left: 4px solid #67c23a;
+            color: #67c23a;
+        }
+        .error {
+            background-color: #fef0f0;
+            border-left: 4px solid #f56c6c;
+            color: #f56c6c;
+        }
+        .info {
+            background-color: #ecf5ff;
+            border-left: 4px solid #409eff;
+            color: #409eff;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        .account-info {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .account-info h3 {
+            color: #303133;
+            margin-bottom: 15px;
+        }
+        .account-info p {
+            color: #606266;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>客户信息共享平台</h1>
+        
+        <div class="status success">
+            <strong>✓ 前端服务运行正常</strong>
+        </div>
+        
+        <div class="status info">
+            <strong>ℹ 当前状态</strong><br>
+            访问地址：http://localhost:8080<br>
+            端口状态：8080端口被占用，请使用其他端口
+        </div>
+        
+        <div class="account-info">
+            <h3>默认登录账号</h3>
+            <p><strong>管理员</strong>：admin / 123456</p>
+            <p><strong>员工</strong>：zhangsan / 123456</p>
+        </div>
+        
+        <button onclick="window.location.href='http://localhost:8080'">访问系统</button>
+    </div>
+</body>
+</html>
